@@ -2,7 +2,7 @@
 
 **Small, runnable demos for AI, compilers, and systems.** 用最少的代码复现一个工程现象，再理解它为什么发生。
 
-## 30 秒上手
+## 快速上手
 
 安装 Python 3.11+，然后：
 
