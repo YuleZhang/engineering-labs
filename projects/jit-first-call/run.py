@@ -116,7 +116,7 @@ def experiment(n, repeats):
     print(f"Numba warm median ({repeats} runs): {statistics.median(warm_ms):9.3f} ms")
     print(f"Same dtype, new array length:   {len_change_ms:9.3f} ms")
     print(f"New dtype (float32):            {dtype_first_ms:9.3f} ms")
-    print(f"Numba overloads: {before} → {after_first} → {after_size} → {after_dtype}")
+    print(f"Numba overloads: {before} -> {after_first} -> {after_size} -> {after_dtype}")
     print("Note: first invocation may compile or load an existing on-disk cache.")
     print("      Times include Python/dispatcher overhead, not only compilation.")
     return result
