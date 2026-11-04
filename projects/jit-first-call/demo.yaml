@@ -1,0 +1,9 @@
+id: jit-first-call
+title: "JIT 第一次为什么慢？"
+type: [tutorial, experiment]
+tags: [compiler, jit, numba, caching]
+run: "python projects/jit-first-call/run.py"
+verify: "python projects/jit-first-call/run.py --verify"
+default: cpu
+optional:
+  cuda: "python projects/jit-first-call/cuda/run.py"

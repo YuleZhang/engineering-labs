@@ -1,0 +1,7 @@
+id: <demo>
+title: "A concrete question"
+type: [tutorial]
+tags: []
+run: "python projects/<demo>/run.py"
+verify: "python projects/<demo>/run.py --verify"
+default: cpu

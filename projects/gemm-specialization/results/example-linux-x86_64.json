@@ -1,0 +1,96 @@
+{
+  "experiment": "gemm-specialization",
+  "recorded_at_utc": "2026-11-04T01:14:31.380063+00:00",
+  "environment": {
+    "python": "3.13.5",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "processor": "x86_64",
+    "numpy": "2.3.5",
+    "numba": "0.65.1"
+  },
+  "parameters": {
+    "repeats": 5,
+    "blocks": [
+      8,
+      16,
+      32
+    ]
+  },
+  "results": [
+    {
+      "shape_mnk": [
+        32,
+        32,
+        32
+      ],
+      "candidates": [
+        {
+          "block": 8,
+          "first_call_ms": 414.2744790000279,
+          "warm_median_ms": 0.02916700009336637
+        },
+        {
+          "block": 16,
+          "first_call_ms": 3.2512569999880725,
+          "warm_median_ms": 0.02448000009280804
+        },
+        {
+          "block": 32,
+          "first_call_ms": 3.3387909999191834,
+          "warm_median_ms": 0.02489499991042976
+        }
+      ],
+      "best_block": 16
+    },
+    {
+      "shape_mnk": [
+        64,
+        48,
+        64
+      ],
+      "candidates": [
+        {
+          "block": 8,
+          "first_call_ms": 0.5678400000306283,
+          "warm_median_ms": 0.17086299999391485
+        },
+        {
+          "block": 16,
+          "first_call_ms": 0.4657220000581219,
+          "warm_median_ms": 0.18481000006431714
+        },
+        {
+          "block": 32,
+          "first_call_ms": 2.1757660000503165,
+          "warm_median_ms": 0.18572600004063133
+        }
+      ],
+      "best_block": 8
+    },
+    {
+      "shape_mnk": [
+        96,
+        128,
+        64
+      ],
+      "candidates": [
+        {
+          "block": 8,
+          "first_call_ms": 6.489261999945484,
+          "warm_median_ms": 1.1568840000109049
+        },
+        {
+          "block": 16,
+          "first_call_ms": 1.0537840000779397,
+          "warm_median_ms": 0.7280209999862564
+        },
+        {
+          "block": 32,
+          "first_call_ms": 0.998116999994636,
+          "warm_median_ms": 0.7689539999091721
+        }
+      ],
+      "best_block": 16
+    }
+  ]
+}

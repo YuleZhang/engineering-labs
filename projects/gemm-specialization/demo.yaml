@@ -1,0 +1,7 @@
+id: gemm-specialization
+title: "为什么 GEMM 要按形状选配置？"
+type: [tutorial, experiment]
+tags: [compiler, jit, gemm, specialization]
+run: "python projects/gemm-specialization/run.py"
+verify: "python projects/gemm-specialization/run.py --verify"
+default: cpu

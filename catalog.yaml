@@ -1,0 +1,14 @@
+version: 1
+demos:
+  - id: jit-first-call
+    title: "JIT 第一次为什么慢？"
+    path: projects/jit-first-call
+    tags: [compiler, jit, numba]
+    default: "python run.py"
+    verified_path: cpu
+  - id: gemm-specialization
+    title: "为什么 GEMM 要按形状选配置？"
+    path: projects/gemm-specialization
+    tags: [compiler, jit, gemm, tuning]
+    default: "python run.py gemm"
+    verified_path: cpu
